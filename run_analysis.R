@@ -89,5 +89,6 @@ summary.df <- merge(summary.df1, summary.df2, by=c("Activity", "Subject"))
 # Step 4
 sortedsummary.df <- arrange(summary.df, Activity, Subject)
 
-##Output dataframe to tesxt file
-write.table(sortedsummary.df, "SortedSummary")
+##Output dataframe to text file
+
+write.table(sortedsummary.df, "SortedSummary.txt", row.name=FALSE)
